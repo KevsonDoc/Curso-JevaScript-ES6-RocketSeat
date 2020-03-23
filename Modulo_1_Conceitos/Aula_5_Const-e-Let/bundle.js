@@ -12,4 +12,15 @@ var usuario = {
   nome: 'diego'
 };
 usuario.nome = "Hello World";
-console.log(usuario);
+console.log(usuario); //Variavel de escopo
+
+function teste(x) {
+  var y = 2;
+
+  if (x > 5) {
+    //    let y = 4;
+    console.log(x, y);
+  }
+}
+
+console.log(teste(10));
