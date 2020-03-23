@@ -1,0 +1,52 @@
+	- 0 que é ?
+		- É quem formula as novas funcionalidades do JavaScript.
+	- Quais versões?
+		- ES6+ / ES7+ / ES8+
+	- Babel
+		- Pega o código com essas novas funcionalidades e comverter ele em um código que todos os navegadores entendam.
+	- 
+	# Instalando Node & Yarn
+	
+	# Configurando Babel
+		- yarn init vai iniciar um arquivo .json que vai armazenar as informações de dependência da aplicação
+		- yarn add @babel/cli
+		- yarn add @babel/preset-env
+		- yarn add @babel/core
+		- cria um arquivo .babelrc
+		- cria um objeto
+		{
+			"presets": ["@babel/preset-env"]
+		}
+		- preset-env: É vai entender qual é o ambiente que estou trabalhando (navegador, node, React native) e vai
+	
+	Converter as frwture do E6+ ES7 e ES8 para o que o navegador não entendem ainda;
+		- criar o arquivo index.
+		- Criar o arquivo bundle.js.html
+		- criar o arquivo main.html
+		- editar o arquivo package.jason adicionando esse código.
+			    "scripts": {"dev": "babel ./main.js -o bundle.js -w"
+    }
+		==> Siguinifica: Com o comando "yarn dev" pegue o arquivo main.js em ES6+ e converta em javaScript no arquivo bundle.js
+	
+	# Classes
+		- Antigamente não se conseguia construir classes no JavaScript o que hoje é possivel
+		- Método super() chama o constructor da classe pai
+	
+	# Const & Letc		
+		-Const ==> Constante: não pode ter seu valor reatribuido 
+		- let ==> Escopo.
+	
+	# Operações em Array
+		- 
+	
+	# Arrow functions
+	
+	# Valores Padrão
+	
+	# Desestruturação
+	
+	# Operadores Rest/Spread
+	
+	# Templates Literals
+	
+	# Object Shor Syntax
