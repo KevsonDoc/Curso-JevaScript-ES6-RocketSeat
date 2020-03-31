@@ -104,9 +104,9 @@ console.log(soma());
 ============================================================================================================================
 	
 	# Desestruturação de objetos no JavaScript
-		-
-		
 	# Operadores Rest/Spread
+		conhecido por usar os "..." um ao lado do outro
+		- REST | Serve para pegar os restos das propriedades
 	
 	# Templates Literals
 	
