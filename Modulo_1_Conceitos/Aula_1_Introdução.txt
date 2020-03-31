@@ -103,8 +103,9 @@ console.log(soma(1));
 console.log(soma());
 ============================================================================================================================
 	
-	# Desestruturação
-	
+	# Desestruturação de objetos no JavaScript
+		-
+		
 	# Operadores Rest/Spread
 	
 	# Templates Literals
