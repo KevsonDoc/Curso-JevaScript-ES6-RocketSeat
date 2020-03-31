@@ -113,3 +113,4 @@ console.log(soma());
 		- Forma de incluir variaveis dentro de strings no JavaScript apartir do ES16+
 	
 	# Object Shor Syntax
+		- (Sintaxe curta de objeto) | 
