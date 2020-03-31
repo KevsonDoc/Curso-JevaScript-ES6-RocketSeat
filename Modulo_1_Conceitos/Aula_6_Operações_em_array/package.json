@@ -4,5 +4,11 @@
         "@babel/core": "^7.9.0",
         "@babel/preset-env": "^7.9.0"
     },
-    "scripts": { "dev": "babel ./main.js -o bundle.js -w" }
+    "scripts": {
+        "dev": "babel ./main.js -o bundle.js -w"
+    },
+    "name": "Aula_6",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
 }

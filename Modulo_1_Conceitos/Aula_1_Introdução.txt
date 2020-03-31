@@ -13,7 +13,7 @@
 		- yarn add @babel/preset-env
 		- yarn add @babel/core
 		- cria um arquivo .babelrc
-		- cria um objeto
+		- cria um objeto chamado ".babelrc" e coloque o comando abaixo
 		{
 			"presets": ["@babel/preset-env"]
 		}
@@ -21,7 +21,7 @@
 	
 	Converter as frwture do E6+ ES7 e ES8 para o que o navegador não entendem ainda;
 		- criar o arquivo index.
-		- Criar o arquivo bundle.js.html
+		- Criar o arquivo bundle.js
 		- criar o arquivo main.html
 		- editar o arquivo package.jason adicionando esse código.
 			    "scripts": {"dev": "babel ./main.js -o bundle.js -w"
@@ -37,10 +37,62 @@
 		- let ==> Escopo.
 	
 	# Operações em Array
-		- 
-	
+		código
+
 	# Arrow functions
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	const arr = [1, 3, 4, 5,6];
+
+	const newArr = arr.map(function(intem){
+		return item * 2;
+	});
+
+	console.log(newArr);
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Quando a function não possui o nome é chamada de função anônima. Então deleta-se  o nme function
+e depois entre as chaves e os parenteses coloca-se "=>"
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	const arr = [1, 3, 4, 5,6];
+
+	const newArr = arr.map((intem) => {
+		return item * 2;
+	});
+
+	console.log(newArr);
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Quando a função recebe um parâmetro como no exemplo (Item) pode-se remover o paentese por volta
+do parâmetro
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+	const arr = [1, 3, 4, 5,6];
+
+	const newArr = arr.map(intem => {
+		return item * 2;
+	});
+
+	console.log(newArr);
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Quando a função retorna sempre auguma informação ou quando nã é um corpo de função podemos colocar
+o corpo da função "item * 2;" depois da flecha "=>"
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	const arr = [1, 3, 4, 5,6];
+
+	const newArr = arr.map(intem => item * 2 );
+
+	console.log(newArr);
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 	
+
 	# Valores Padrão
 	
 	# Desestruturação
