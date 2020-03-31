@@ -94,6 +94,14 @@ o corpo da função "item * 2;" depois da flecha "=>"
 	
 
 	# Valores Padrão
+		- Colcar valore padões para os parâmetoros da função
+============================================================================================================================
+function soma(a = 3, b = 6){
+	reuturn a + b;
+}
+console.log(soma(1));
+console.log(soma());
+============================================================================================================================
 	
 	# Desestruturação
 	
