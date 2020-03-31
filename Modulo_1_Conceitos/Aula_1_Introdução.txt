@@ -107,7 +107,9 @@ console.log(soma());
 	# Operadores Rest/Spread
 		conhecido por usar os "..." um ao lado do outro
 		- REST | Serve para pegar os restos das propriedades
+		- SPREAD | Repassa as informações de objeto ou array para outra estrutura de dados
 	
 	# Templates Literals
+		- Forma de incluir variaveis dentro de strings no JavaScript apartir do ES16+
 	
 	# Object Shor Syntax
