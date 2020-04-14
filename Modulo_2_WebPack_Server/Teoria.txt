@@ -1,0 +1,40 @@
+	# Configurando Webpack
+		- Serviço que vai disponibilizar uma forma de poder trabalhar com varios arquivs js na nossa aplicação.
+		- O -D servepara dexar apenas em modo desenvolvimento.
+			$ yarn add webpack webpack-cli -D
+		- Criar um arquivo de configuração para o webpack.
+			 "webpack.config.js"
+				|-------------------------------------------------------------------------------------------
+				|module.exports = {
+				|	entry: './main.js',
+				|	output: {
+				|		path: __dirname, // variavel global que se refere ao diretório do webpack.config.js
+				|		filename: 'bundle.js,
+				|	},
+				|	module: {
+				|		rules: [ // vai dizer como deve se comportar quando o usuario estiver tentando importar arquivos js
+				|			{
+				|				test: /\.js$/,						
+				|				exclude: /node_modules/,
+				|				use: {
+				|					loader: 'babel-loader',
+				|				}
+				|			}	
+				|
+				|		],
+				|	},
+				|};
+				|
+
+			$ yarn add @babel-loader@8.0.0-beta.0 S-D
+		- Executar o webpack: Trocar em package.json os parametros dos scripts
+			"scripts": {
+				"dev": "webpack --mode=development -w"
+			}
+	# Import/Export
+		- Sintxe
+	# Webpack dev server
+		- Criar uma pasta src | Vai ficar todo código JavaScrit que será utilizado na aplicação.
+			mover arquivos main.js para src
+		- Criar uma pasta public | 
+		

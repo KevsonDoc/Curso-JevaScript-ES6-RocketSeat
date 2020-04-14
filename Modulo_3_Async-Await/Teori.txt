@@ -1,0 +1,4 @@
+	# Async e await
+		- Promisses são formas de realizar ações de forma assincrona usada e requisições de API externos
+
+	# Configurando axios
