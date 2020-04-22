@@ -32,6 +32,8 @@ class App {
             avatar_url,
             html_url,
         });
+        
+        this.inputEl.value = '';
 
         this.render();
     }
