@@ -15,6 +15,20 @@ class App {
         this.formEl.onsubmit = envent => this.addRepository(envent);
     }
 
+
+    setLoading(loading = true) {
+        if (loading === true) {
+            let loadingEl = document.createElement('img');
+            loadingEl.setAttribute('src', 'https://media1.tenor.com/images/c7cce308690c435002dfedee6889d135/tenor.gif?itemid=15742167');
+            loadingEl.setAttribute('id', 'loading');
+            this.formEl.appendChild(loadingEl);
+        } else {
+            document.getElementById('loading').remove();    
+        }
+
+
+    }
+
     async addRepository(event){
         event.preventDefault();
 
@@ -22,6 +36,9 @@ class App {
         if (repoInput.length === 0)
             return;
 
+        
+    this.setLoading();
+        try {
         const response = await api.get(`/repos/${repoInput}`);
 
         const { name, description, html_url, owner: { avatar_url } } = response.data;
@@ -32,10 +49,16 @@ class App {
             avatar_url,
             html_url,
         });
-        
+
         this.inputEl.value = '';
 
         this.render();
+        } catch (err) {
+            alert('O repositório não existe');
+        }
+
+        this.setLoading(false);
+
     }
 
     render() {
